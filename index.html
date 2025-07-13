@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Malla Interactiva - Profesorado de Educación Primaria</title>
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: 'base',
+      themeVariables: {
+        primaryColor: '#c7dfff',
+        edgeLabelBackground: '#f4e1ff',
+        nodeTextColor: '#4b4b4b',
+        background: '#ffffff'
+      }
+    });
+  </script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #fdfdff;
+      color: #333;
+      margin: 0;
+      padding: 1em;
+    }
+    h1 {
+      color: #7d6aa6;
+      text-align: center;
+    }
+    .mermaid {
+      margin-top: 2em;
+    }
+  </style>
+</head>
+<body>
+  <h1>Malla Interactiva – 1er Año</h1>
+  <div class="mermaid">
+    graph TD
+      A1[Pedagogía] --> A13[Didáctica General]
+      A2[Sociología de la Educación] --> A13
+      A3[Psicología y Educación] --> A13
+      A4[Historia Argentina y Latinoamericana]
+      A5[Movimiento y Cuerpo I]
+      A6[Taller de Práctica I]
+      A7[Comunicación oral y escrita]
+      A8[Resolución de problemas y creatividad]
+      A9[Ciencias naturales para una cultura ciudadana]
+      A10[Problemáticas de las ciencias sociales]
+      A11[Área estético-expresiva I]
+      A12[Problemáticas contemporáneas de la educación primaria I]
+  </div>
+</body>
+</html>
